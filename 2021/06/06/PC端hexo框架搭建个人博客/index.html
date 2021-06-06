@@ -18,9 +18,25 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>Hexo</title>
+  <title>PC端hexo框架搭建个人博客 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -147,17 +163,50 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="An elegant Material-Design theme for Hexo">
+            <span class="h2" id="subtitle" title="PC端hexo框架搭建个人博客">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-06 15:19" pubdate>
+        2021年6月6日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      245 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      3
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -166,161 +215,130 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/06/PC%E7%AB%AFhexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_self">
-          PC端hexo框架搭建个人博客
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/06/PC%E7%AB%AFhexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_self">
-          
-          
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">PC端hexo框架搭建个人博客</h1>
             
-          
-          安装hexo框架1.安装node.js和git
-2.安装hexo框架
+            <div class="markdown-body">
+              <h2 id="安装hexo框架"><a href="#安装hexo框架" class="headerlink" title="安装hexo框架"></a>安装hexo框架</h2><p>1.安装node.js和git</p>
+<p>2.安装hexo框架</p>
+<blockquote>
+<p>在cmd窗口使用npm进行安装</p>
+<p>npm install -g hexo-cli</p>
+</blockquote>
+<p>3.使用hexo -v来验证是否安装成功</p>
+<h2 id="hexo简单使用"><a href="#hexo简单使用" class="headerlink" title="hexo简单使用"></a>hexo简单使用</h2><table>
+<thead>
+<tr>
+<th align="center">hexo命令</th>
+<th align="center">hexo命令简写</th>
+<th align="center">hexo命令作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">hexo server</td>
+<td align="center">hexo s</td>
+<td align="center">开启hexo服务</td>
+</tr>
+<tr>
+<td align="center">hexo deploy</td>
+<td align="center">hexo d</td>
+<td align="center">部署博客到服务器</td>
+</tr>
+<tr>
+<td align="center">hexo generate</td>
+<td align="center">hexo g</td>
+<td align="center">将博客内容进行编译，生成静态页</td>
+</tr>
+<tr>
+<td align="center">hexo new “博客名字”</td>
+<td align="center">无</td>
+<td align="center">用于新建博客</td>
+</tr>
+<tr>
+<td align="center">hexo new page  name</td>
+<td align="center">无</td>
+<td align="center">新建一个博客管理页</td>
+</tr>
+</tbody></table>
+<h2 id="将博客发布到GitHub上"><a href="#将博客发布到GitHub上" class="headerlink" title="将博客发布到GitHub上"></a>将博客发布到GitHub上</h2><p>1.在GitHub上新建一个仓库（repository）,命名必须符合规范</p>
+<blockquote>
+<p>命名规范：账户名.github.io</p>
+</blockquote>
+<p>2.客户端安装工具hexo-deployer-git,用于推送博客到github仓库。</p>
+<blockquote>
+<p> npm install –save hexo-deployer-git</p>
+</blockquote>
+<p>3.使用hexo编译生成博客</p>
+<p>4.使用hexo d 进行发布</p>
+<p>5.访问 网址 ：账户名.github.io 即可</p>
+<h2 id="博客主题更换"><a href="#博客主题更换" class="headerlink" title="博客主题更换"></a>博客主题更换</h2><blockquote>
+<p>在github上找到hexo主题，按照要求进行配置即可</p>
+</blockquote>
+<p><img src="C:/Users/Administrator/Desktop/学习总结/image/1622965779241.png" srcset="/img/loading.gif" lazyload alt="1622965779241"></p>
 
-在cmd窗口使用npm进行安装
-npm install -g hexo-cli
-
-3.使用hexo -v来验证是否安装成功
-hexo简单使用
-
-
-hexo命令
-hexo命令简写
-hexo命令作用
-
-
-
-hexo server
-hexo s
-开启hexo服务
-
-
-hexo deploy
-hexo d
-部署博客到服务器
-
-
-hex
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-06 15:19" pubdate>
-              2021-06-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/06/MyFirstBlog/" target="_self">
-          MyFirstBlog
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/06/MyFirstBlog/" target="_self">
-          
-          
-            
-          
-          娘西皮的这瓜真甜
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-06 14:05" pubdate>
-              2021-06-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/06/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/06/hello-world/" target="_self">
-          
-          
-            
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-06 13:49" pubdate>
-              2021-06-06
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/06/06/MyFirstBlog/">
+                        <span class="hidden-mobile">MyFirstBlog</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -400,9 +418,15 @@ Quick
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
